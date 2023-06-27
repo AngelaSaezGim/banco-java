@@ -88,6 +88,7 @@ public class ConsolaBanco {
 			break;
 		case 5:
 			login();
+			break;
 		case 6:
 			register();
 			break;
@@ -262,6 +263,7 @@ public class ConsolaBanco {
 		
 		System.out.print("id gestor: ");
 		int idGestor = teclado.nextInt();
+		teclado.nextLine();
 		System.out.print("Contraseña: ");
 		String pass = teclado.nextLine();
 		Gestor gestor = buscarGestorPorId(idGestor);
